@@ -39,4 +39,4 @@ jobs:
     steps:
       - name: Notify
         run: |
-          curl --request POST --url ${{ secrets.DEPLOY_HOOK }} --header 'content-type: application/json' --data '${{ secrets.DEPLOY_MSG }}'
+          curl --fail-with-body --show-error --silent --request POST --url ${{ secrets.DEPLOY_HOOK }} --header 'content-type: application/json' --data '${{ secrets.DEPLOY_MSG }}'
