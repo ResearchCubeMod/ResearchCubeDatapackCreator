@@ -45,7 +45,7 @@ export const TIER_INFO: Record<Tier, TierInfo> = {
     drive: 'researchcube:metadata_elaborate',
     cube: 'researchcube:cube_precise',
     maxRecipes: 12,
-    color: '#F59E0B',
+    color: '#8B5CF6',
   },
   FLAWLESS: {
     name: 'FLAWLESS',
@@ -54,7 +54,7 @@ export const TIER_INFO: Record<Tier, TierInfo> = {
     drive: 'researchcube:metadata_cybernetic',
     cube: 'researchcube:cube_flawless',
     maxRecipes: 16,
-    color: '#8B5CF6',
+    color: '#F59E0B',
   },
   SELF_AWARE: {
     name: 'SELF_AWARE',
