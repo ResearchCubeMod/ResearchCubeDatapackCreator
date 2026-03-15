@@ -1,0 +1,38 @@
+.shaped-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3px;
+  max-width: 240px;
+}
+
+.shaped-grid-cell {
+  aspect-ratio: 1;
+  background: var(--bg-tertiary);
+  border: 2px solid var(--border);
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: border-color 0.15s;
+  padding: 2px;
+  text-align: center;
+  word-break: break-all;
+  overflow: hidden;
+}
+
+.shaped-grid-cell:hover {
+  border-color: var(--text-muted);
+}
+
+.shaped-grid-cell.selected {
+  border-color: var(--accent);
+  background: rgba(91, 106, 191, 0.1);
+}
+
+.shaped-grid-cell.filled {
+  color: var(--text-primary);
+  background: var(--bg-hover);
+}

@@ -1,0 +1,18 @@
+.main-layout {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+.main-layout-canvas {
+  flex: 1;
+  position: relative;
+}
+
+.main-layout-panel {
+  width: 380px;
+  flex-shrink: 0;
+  border-left: 1px solid var(--border);
+  background: var(--bg-secondary);
+  overflow-y: auto;
+}
