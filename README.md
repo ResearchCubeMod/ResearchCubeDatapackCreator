@@ -29,4 +29,4 @@ npm run build
 
 ## Deployment
 
-Automatically deployed to GitHub Pages via GitHub Actions on push to `main`.
+Automatically deployed to GitHub Pages via GitHub Actions on push to `live`.
