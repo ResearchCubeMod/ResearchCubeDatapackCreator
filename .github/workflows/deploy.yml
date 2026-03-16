@@ -33,3 +33,10 @@ jobs:
           path: dist
       - id: deployment
         uses: actions/deploy-pages@v4
+  notification:
+    runs-on: ubuntu-latest
+    needs: [build-and-deploy]
+    steps:
+      - name: Notify
+        run: |
+          curl --fail-with-body --show-error --silent --request POST --url ${{ secrets.DEPLOY_HOOK }} --header 'content-type: application/json' --data '${{ secrets.DEPLOY_MSG }}'
